@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "test": "node --experimental-vm-modules node_modules/.bin/jest",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build && npm test"
   },
   "keywords": ["ecoclaw", "skills", "byok", "skill-discovery"],
   "author": "ecoclaw",
