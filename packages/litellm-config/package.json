@@ -1,5 +1,5 @@
 {
-  "name": "@ecoclaw/litellm-config",
+  "name": "@gonzih/litellm-config",
   "version": "1.0.0",
   "description": "LiteLLM configuration generator with BYOK multi-model routing for ecoclaw",
   "main": "dist/index.js",
