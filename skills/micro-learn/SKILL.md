@@ -1,7 +1,13 @@
 ---
 name: micro-learn
 description: 5-minute daily AI learning sessions for professionals across 25+ domains with spaced repetition, streak tracking, and Telegram delivery.
+license: MIT
 triggers: ["micro learn", "daily lesson", "5 minute learning", "professional learning", "daily skill", "learn daily", "micro learning"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Micro Learn

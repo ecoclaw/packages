@@ -1,3 +1,16 @@
+---
+name: settlement-summary
+description: "Converts settlement terms into a clear, client-readable summary document covering key financial terms, non-monetary provisions, release scope, conf..."
+license: MIT
+triggers:
+  - settlement-summary
+  - settlement summary
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
+---
 # Settlement Summary
 **Package:** @gonzih/skills-legal
 **Command:** /settlement-summary

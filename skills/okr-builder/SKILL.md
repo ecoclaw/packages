@@ -1,7 +1,13 @@
 ---
 name: okr-builder
 description: Structure quarterly OKRs with measurable key results, owner assignments, confidence scoring, and alignment to company-level objectives.
+license: MIT
 triggers: ["okr builder", "write okrs", "build okrs", "quarterly goals", "objectives key results", "okr planning"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # OKR Builder

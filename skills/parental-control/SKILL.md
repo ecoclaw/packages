@@ -1,7 +1,13 @@
 ---
 name: parental-control
 description: MCP proxy providing real-time AI content guardrails, spiral detection, and parent notifications via Telegram/iMessage/WhatsApp for children's AI sessions.
+license: MIT
 triggers: ["parental control", "child safety", "kid safety", "family ai", "parent alerts", "monitor child ai"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Parental Control

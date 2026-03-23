@@ -1,7 +1,13 @@
 ---
 name: board-update
 description: Write an Executive Director board meeting report covering financials, programs, operations, and decisions needed
+license: MIT
 triggers: ["board update", "board report", "executive director report", "board memo", "board meeting", "ED report"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Board Update

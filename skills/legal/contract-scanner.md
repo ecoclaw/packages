@@ -1,3 +1,16 @@
+---
+name: contract-scanner
+description: "Reviews contract text and surfaces key terms, risk clauses, unusual provisions, and missing standard protections"
+license: MIT
+triggers:
+  - contract-scanner
+  - contract scanner
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
+---
 # Contract Scanner
 **Package:** @gonzih/skills-legal
 **Command:** /contract-scanner

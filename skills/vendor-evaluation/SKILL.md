@@ -1,7 +1,13 @@
 ---
 name: vendor-evaluation
 description: Create a weighted vendor scorecard with criteria, scoring, and a final recommendation
+license: MIT
 triggers: ["vendor evaluation", "vendor scorecard", "vendor selection", "vendor comparison", "RFP evaluation", "supplier evaluation"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Vendor Evaluation

@@ -1,7 +1,13 @@
 ---
 name: email-newsletter
 description: Generate a monthly email newsletter for an environmental law firm's client and prospect list.
+license: MIT
 triggers: ["email newsletter", "newsletter", "monthly email", "client email", "email blast"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Email Newsletter

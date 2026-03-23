@@ -1,3 +1,16 @@
+---
+name: job-description-writer
+description: "Generates clear, inclusive, and compelling job descriptions from a role brief"
+license: MIT
+triggers:
+  - job-description-writer
+  - job description writer
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
+---
 # Job Description Writer
 **Package:** @gonzih/skills-hr
 **Command:** /job-description-writer

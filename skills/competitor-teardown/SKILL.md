@@ -1,7 +1,13 @@
 ---
 name: competitor-teardown
 description: Structured competitor positioning analysis — messaging, strengths, weaknesses, and whitespace
+license: MIT
 triggers: ["competitor analysis", "competitive teardown", "competitor research", "competitive positioning", "competitor audit"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Competitor Teardown

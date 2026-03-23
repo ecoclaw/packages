@@ -1,3 +1,16 @@
+---
+name: interview-kit
+description: "Builds a complete interview kit for a role: a structured question bank organized by competency, a scoring rubric, interviewer guidance notes, and a..."
+license: MIT
+triggers:
+  - interview-kit
+  - interview kit
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
+---
 # Interview Kit
 **Package:** @gonzih/skills-hr
 **Command:** /interview-kit

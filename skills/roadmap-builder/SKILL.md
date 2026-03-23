@@ -1,7 +1,13 @@
 ---
 name: roadmap-builder
 description: Build a Now/Next/Later quarterly roadmap with themes, initiatives, and rationale
+license: MIT
 triggers: ["roadmap", "product roadmap", "quarterly roadmap", "now next later", "roadmap builder", "product planning"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Roadmap Builder

@@ -1,7 +1,13 @@
 ---
 name: review-response
 description: Write a restaurant online review response — positive acknowledgment, neutral engagement, or negative recovery
+license: MIT
 triggers: ["review response", "online review", "Google review", "Yelp response", "review reply", "negative review response"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Review Response

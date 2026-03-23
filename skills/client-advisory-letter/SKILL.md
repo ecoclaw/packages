@@ -1,7 +1,13 @@
 ---
 name: client-advisory-letter
 description: Write a professional financial advisory letter with findings, recommendations, and action steps
+license: MIT
 triggers: ["advisory letter", "client letter", "financial advisory", "CPA letter", "accounting letter", "client communication"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Client Advisory Letter

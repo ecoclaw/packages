@@ -1,7 +1,13 @@
 ---
 name: social-media-week
 description: Generate a full week of social media posts (LinkedIn, X/Twitter, Instagram) from a single topic or piece of content.
+license: MIT
 triggers: ["social media", "social posts", "week of posts", "content calendar", "linkedin posts", "instagram captions"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Social Media Week

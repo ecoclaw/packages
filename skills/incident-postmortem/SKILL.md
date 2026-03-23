@@ -1,7 +1,13 @@
 ---
 name: incident-postmortem
 description: Write a 5-whys incident postmortem with timeline, root cause analysis, and action items
+license: MIT
 triggers: ["postmortem", "incident report", "5 whys", "incident review", "outage report", "root cause analysis", "RCA"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Incident Postmortem Writer

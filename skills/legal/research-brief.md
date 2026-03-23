@@ -1,3 +1,16 @@
+---
+name: research-brief
+description: "Structures a legal research question into a formatted memo outline: issue statement, applicable legal standard, key cases or statutes to research, ..."
+license: MIT
+triggers:
+  - research-brief
+  - research brief
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
+---
 # Research Brief
 **Package:** @gonzih/skills-legal
 **Command:** /research-brief

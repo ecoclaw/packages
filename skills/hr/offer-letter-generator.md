@@ -1,3 +1,16 @@
+---
+name: offer-letter-generator
+description: "Generates a professional, legally aware offer letter template from role details: title, compensation, start date, reporting structure, at-will lang..."
+license: MIT
+triggers:
+  - offer-letter-generator
+  - offer letter generator
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
+---
 # Offer Letter Generator
 **Package:** @gonzih/skills-hr
 **Command:** /offer-letter-generator

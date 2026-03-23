@@ -1,7 +1,13 @@
 ---
 name: lead-magnet
 description: Create a downloadable lead magnet (guide, checklist, or toolkit) for an environmental law firm to capture qualified leads.
+license: MIT
 triggers: ["lead magnet", "downloadable guide", "checklist", "free guide", "lead capture", "ebook", "toolkit"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Lead Magnet

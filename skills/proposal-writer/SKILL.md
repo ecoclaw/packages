@@ -1,7 +1,13 @@
 ---
 name: proposal-writer
 description: Write a professional sales proposal — executive summary, solution fit, pricing, timeline, and next steps
+license: MIT
 triggers: ["sales proposal", "proposal writer", "write proposal", "business proposal", "sales doc", "proposal template"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Proposal Writer

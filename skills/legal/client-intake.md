@@ -1,3 +1,16 @@
+---
+name: client-intake
+description: "Generates a structured client intake questionnaire and summary template tailored to a specific practice area (litigation, transactional, employment..."
+license: MIT
+triggers:
+  - client-intake
+  - client intake
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
+---
 # Client Intake
 **Package:** @gonzih/skills-legal
 **Command:** /client-intake

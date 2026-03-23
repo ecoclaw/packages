@@ -1,7 +1,13 @@
 ---
 name: monthly-report
 description: Generate a monthly AI marketing performance report with analysis and recommendations for a law firm marketing client.
+license: MIT
 triggers: ["monthly report", "performance report", "marketing report", "monthly summary", "analytics report"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Monthly Report

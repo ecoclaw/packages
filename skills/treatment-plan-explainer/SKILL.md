@@ -1,7 +1,13 @@
 ---
 name: treatment-plan-explainer
 description: Write a patient-friendly explanation of a dental treatment plan — what's needed, why, and what to expect
+license: MIT
 triggers: ["treatment plan", "dental treatment", "patient explanation", "treatment explainer", "dental plan", "patient education"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Treatment Plan Explainer

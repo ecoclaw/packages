@@ -1,7 +1,13 @@
 ---
 name: screen-time-mcp
 description: Enforces AI usage limits for children — daily caps, quiet hours, weekly budgets, cool-down periods, gamified streaks, and parent usage reports.
+license: MIT
 triggers: ["screen time", "ai time limit", "usage limit", "quiet hours", "daily limit", "ai schedule"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Screen Time MCP

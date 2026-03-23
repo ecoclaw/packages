@@ -1,7 +1,13 @@
 ---
 name: safe-personas
 description: Age-appropriate AI persona system prompts for children 5-17. Five developmental tiers with universal safety layer and crisis escalation.
+license: MIT
 triggers: ["child persona", "kid safe ai", "age appropriate ai", "safe persona", "family persona", "child mode"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Safe Personas

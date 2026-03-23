@@ -1,7 +1,13 @@
 ---
 name: research-digest
 description: Summarize clinical trials, systematic reviews, and guideline updates into actionable clinical pearls for healthcare providers.
+license: MIT
 triggers: ["research digest", "summarize study", "clinical research", "literature summary", "guideline update", "journal club"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Research Digest

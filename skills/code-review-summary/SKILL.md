@@ -1,7 +1,13 @@
 ---
 name: code-review-summary
 description: Summarize code review feedback into categorized, prioritized findings with actionable recommendations
+license: MIT
 triggers: ["code review", "PR review", "pull request review", "code feedback", "review summary"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Code Review Summary

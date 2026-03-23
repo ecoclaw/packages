@@ -1,7 +1,13 @@
 ---
 name: menu-writer
 description: Write menu item descriptions in three style options — elevated, casual, and minimalist
+license: MIT
 triggers: ["menu writer", "menu description", "menu copy", "food description", "menu item", "restaurant menu"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Menu Writer

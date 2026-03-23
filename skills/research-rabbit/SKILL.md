@@ -1,7 +1,13 @@
 ---
 name: research-rabbit
 description: Academic research MCP for university students — searches ArXiv, Semantic Scholar, OpenAlex, PubMed simultaneously, maps literature, finds research gaps, builds argument scaffolds.
+license: MIT
 triggers: ["research rabbit", "academic research", "literature review", "find papers", "research papers", "scholarly research", "arxiv search"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Research Rabbit

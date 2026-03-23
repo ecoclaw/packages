@@ -1,7 +1,13 @@
 ---
 name: impact-story
 description: Write a beneficiary narrative impact story for fundraising appeals, annual reports, or social media
+license: MIT
 triggers: ["impact story", "beneficiary story", "fundraising story", "case study", "donor appeal", "success story"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Impact Story

@@ -1,7 +1,13 @@
 ---
 name: brand-voice-guide
 description: Create a brand voice guide with tone attributes, writing principles, and do/don't examples
+license: MIT
 triggers: ["brand voice", "voice guide", "brand tone", "tone of voice", "brand personality", "writing style guide"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Brand Voice Guide

@@ -1,3 +1,16 @@
+---
+name: okr-builder
+description: "Helps executives and team leads draft well-formed OKRs (Objectives and Key Results) from strategic priorities"
+license: MIT
+triggers:
+  - okr-builder
+  - okr builder
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
+---
 # OKR Builder
 **Package:** @gonzih/skills-executive
 **Command:** /okr-builder

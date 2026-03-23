@@ -1,7 +1,13 @@
 ---
 name: homework-scaffold
 description: Socratic AI tutoring that refuses to do homework for kids — detects cheating attempts, redirects to scaffolded hints, subject-aware guidance for math, writing, science, history.
+license: MIT
 triggers: ["homework help", "homework scaffold", "anti cheating", "socratic tutor", "study help", "academic scaffold"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Homework Scaffold

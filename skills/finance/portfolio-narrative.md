@@ -1,3 +1,16 @@
+---
+name: portfolio-narrative
+description: "Transforms portfolio performance data — returns, allocation, benchmark comparison, key contributors and detractors — into a clear, client-ready nar..."
+license: MIT
+triggers:
+  - portfolio-narrative
+  - portfolio narrative
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
+---
 # Portfolio Narrative
 **Package:** @gonzih/skills-finance
 **Command:** /portfolio-narrative

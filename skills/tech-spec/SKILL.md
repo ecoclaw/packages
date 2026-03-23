@@ -1,7 +1,13 @@
 ---
 name: tech-spec
 description: Write a technical specification with problem context, proposed solution, API design, rollout plan, and risks
+license: MIT
 triggers: ["tech spec", "technical specification", "technical design", "engineering spec", "design doc", "implementation plan"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Tech Spec Writer

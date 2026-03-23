@@ -1,7 +1,13 @@
 ---
 name: process-audit
 description: Audit a business process to identify bottlenecks, automation opportunities, and effort/impact improvements
+license: MIT
 triggers: ["process audit", "process review", "workflow audit", "efficiency review", "operations audit", "bottleneck analysis"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Process Audit

@@ -1,7 +1,13 @@
 ---
 name: competitor-audit
 description: Research and analyze competitor law firm marketing to identify gaps, opportunities, and winning strategies.
+license: MIT
 triggers: ["competitor audit", "competitor analysis", "competitive research", "competitor review", "market analysis"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Competitor Audit

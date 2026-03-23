@@ -1,7 +1,13 @@
 ---
 name: market-report
 description: Produce neighborhood or city-level real estate market reports with price trends, absorption rates, and client-facing narrative.
+license: MIT
 triggers: ["market report", "market analysis", "real estate market", "neighborhood report", "market conditions"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Market Report

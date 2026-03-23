@@ -1,7 +1,13 @@
 ---
 name: prd-writer
 description: Write a full Product Requirements Document with problem statement, goals, user stories, and success metrics
+license: MIT
 triggers: ["PRD", "product requirements", "product spec", "requirements document", "product document", "feature spec"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # PRD Writer

@@ -1,7 +1,13 @@
 ---
 name: attachment-guard
 description: Detects unhealthy AI attachment patterns in children (dependency, parasocial bonds, anthropomorphization) and responds with therapeutic reframing while alerting parents.
+license: MIT
 triggers: ["attachment guard", "ai dependency", "healthy ai use", "parasocial ai", "child ai relationship", "ai attachment"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Attachment Guard

@@ -1,7 +1,13 @@
 ---
 name: debate-coach
 description: AI debate coach for teens — argues both sides, detects 20 logical fallacies in real time, scores argument quality, builds critical thinking through structured debate.
+license: MIT
 triggers: ["debate coach", "critical thinking", "logical fallacies", "argument training", "debate practice", "argue both sides"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Debate Coach

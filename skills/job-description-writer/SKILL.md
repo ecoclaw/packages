@@ -1,7 +1,13 @@
 ---
 name: job-description-writer
 description: Generate inclusive, legally compliant job descriptions with structured requirements, responsibilities, and DEI-optimized language.
+license: MIT
 triggers: ["job description", "job posting", "write jd", "job listing", "open role", "hiring description"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Job Description Writer

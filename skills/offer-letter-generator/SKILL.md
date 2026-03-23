@@ -1,7 +1,13 @@
 ---
 name: offer-letter-generator
 description: Draft professional offer letters with compensation summary, contingencies, onboarding next steps, and jurisdiction-appropriate language.
+license: MIT
 triggers: ["offer letter", "generate offer", "job offer", "employment offer", "offer package"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Offer Letter Generator

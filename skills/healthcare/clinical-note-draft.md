@@ -1,3 +1,16 @@
+---
+name: clinical-note-draft
+description: "Generates a structured clinical note draft in SOAP or DAP format from provider-supplied bullet points or dictation"
+license: MIT
+triggers:
+  - clinical-note-draft
+  - clinical note draft
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
+---
 # Clinical Note Draft
 **Package:** @gonzih/skills-healthcare
 **Command:** /clinical-note-draft

@@ -1,3 +1,16 @@
+---
+name: patient-education
+description: "Creates plain-language patient education materials — condition explainers, medication guides, post-procedure instructions, and lifestyle recommenda..."
+license: MIT
+triggers:
+  - patient-education
+  - patient education
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
+---
 # Patient Education
 **Package:** @gonzih/skills-healthcare
 **Command:** /patient-education

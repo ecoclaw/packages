@@ -1,7 +1,13 @@
 ---
 name: audit-finding-summary
 description: Write a management letter summarizing audit findings categorized by severity with recommended corrective actions
+license: MIT
 triggers: ["audit findings", "management letter", "audit summary", "audit report", "internal controls", "audit results"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Audit Finding Summary

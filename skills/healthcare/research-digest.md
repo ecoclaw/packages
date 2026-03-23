@@ -1,3 +1,16 @@
+---
+name: research-digest
+description: "Summarizes clinical research abstracts, systematic reviews, or guideline updates into a structured digest: key findings, study design quality, clin..."
+license: MIT
+triggers:
+  - research-digest
+  - research digest
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
+---
 # Research Digest
 **Package:** @gonzih/skills-healthcare
 **Command:** /research-digest

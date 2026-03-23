@@ -1,7 +1,13 @@
 ---
 name: listing-writer
 description: Generate MLS-ready property listing descriptions with long form, short form, and social media variants.
+license: MIT
 triggers: ["listing writer", "write listing", "property description", "mls listing", "listing copy"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Listing Writer

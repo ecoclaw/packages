@@ -1,7 +1,13 @@
 ---
 name: architecture-doc
 description: Write an architecture design document with system overview, component diagram (ASCII), data flow, and decision log
+license: MIT
 triggers: ["architecture doc", "architecture document", "system design", "design doc", "technical architecture", "ADR"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Architecture Doc Writer

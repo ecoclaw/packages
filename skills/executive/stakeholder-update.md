@@ -1,3 +1,16 @@
+---
+name: stakeholder-update
+description: "Drafts clear, appropriately detailed stakeholder updates for investors, board members, key customers, or internal leadership"
+license: MIT
+triggers:
+  - stakeholder-update
+  - stakeholder update
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
+---
 # Stakeholder Update
 **Package:** @gonzih/skills-executive
 **Command:** /stakeholder-update

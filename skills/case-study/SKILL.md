@@ -1,7 +1,13 @@
 ---
 name: case-study
 description: Transform a client win or matter outcome into a polished case study for the law firm website and marketing materials.
+license: MIT
 triggers: ["case study", "client story", "matter outcome", "client win", "success story"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Case Study

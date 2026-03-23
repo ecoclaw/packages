@@ -1,3 +1,16 @@
+---
+name: compliance-comms-review
+description: "Reviews draft client communications — emails, newsletters, social posts, presentation slides — against common financial services compliance standar..."
+license: MIT
+triggers:
+  - compliance-comms-review
+  - compliance comms review
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
+---
 # Compliance Comms Review
 **Package:** @gonzih/skills-finance
 **Command:** /compliance-comms-review

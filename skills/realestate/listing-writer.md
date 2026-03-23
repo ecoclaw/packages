@@ -1,3 +1,16 @@
+---
+name: listing-writer
+description: "Generates compelling MLS-ready property listings from a set of inputs: address, key features, square footage, bedrooms/bathrooms, and any notable u..."
+license: MIT
+triggers:
+  - listing-writer
+  - listing writer
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
+---
 # Listing Writer
 **Package:** @gonzih/skills-realestate
 **Command:** /listing-writer

@@ -1,7 +1,13 @@
 ---
 name: user-story-generator
 description: Break epics into user stories with Gherkin acceptance criteria
+license: MIT
 triggers: ["user stories", "user story", "acceptance criteria", "Gherkin", "BDD", "story generator", "epics to stories"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # User Story Generator

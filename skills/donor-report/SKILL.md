@@ -1,7 +1,13 @@
 ---
 name: donor-report
 description: Write a personalized donor impact report showing how their gift was used and the outcomes it enabled
+license: MIT
 triggers: ["donor report", "impact report", "donor update", "stewardship letter", "donor communication", "gift report"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Donor Report

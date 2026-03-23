@@ -1,7 +1,13 @@
 ---
 name: clinical-note-draft
 description: Generate structured SOAP or APSO clinical note drafts from de-identified visit summaries, with ICD-10 suggestions and attestation-ready formatting.
+license: MIT
 triggers: ["clinical note", "soap note", "apso note", "visit note", "clinical documentation", "progress note"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Clinical Note Draft

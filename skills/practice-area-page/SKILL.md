@@ -1,7 +1,13 @@
 ---
 name: practice-area-page
 description: Write an SEO-optimized landing page for a specific environmental law practice area.
+license: MIT
 triggers: ["practice area page", "landing page", "service page", "website page", "practice page"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Practice Area Page

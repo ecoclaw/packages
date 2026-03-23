@@ -1,7 +1,13 @@
 ---
 name: release-notes
 description: Write customer-facing release notes from a raw changelog or ticket list
+license: MIT
 triggers: ["release notes", "changelog", "what's new", "release announcement", "product release", "version notes"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Release Notes Writer

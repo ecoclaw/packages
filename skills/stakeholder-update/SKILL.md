@@ -1,7 +1,13 @@
 ---
 name: stakeholder-update
 description: Compose concise, audience-tuned stakeholder updates for boards, investors, employees, or customers — covering progress, blockers, and next steps.
+license: MIT
 triggers: ["stakeholder update", "investor update", "team update", "company update", "all hands update", "progress update"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Stakeholder Update

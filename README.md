@@ -161,6 +161,104 @@ Contact: [hello@ecoficlaw.com](mailto:hello@ecoficlaw.com)
 
 ---
 
+## BYOK & Skill Discovery
+
+### What is BYOK?
+
+BYOK (Bring Your Own Key) lets users supply their own API keys to unlock premium model features inside ecoclaw skills. Skills that require external APIs (like Google Ads live campaign creation) declare their key requirements in the `byok` field of their SKILL.md frontmatter. Skills with no external dependencies set `byok: []` and work out of the box.
+
+Key rules:
+- Keys marked `(optional)` improve output quality but the skill still runs without them
+- Keys without any qualifier are required — the skill is hidden when they are absent
+- The `filterByApiKeys` function handles this filtering at runtime
+
+### `@ecoclaw/skill-discovery`
+
+Runtime SKILL.md manifest parsing, API key filtering, and skill context building.
+
+```bash
+npm install @ecoclaw/skill-discovery
+```
+
+```typescript
+import { discoverSkills, filterByApiKeys, buildSkillContext } from '@ecoclaw/skill-discovery'
+
+// Discover all skills in a directory tree
+const allSkills = discoverSkills('/path/to/skills')
+
+// Filter to only skills whose required API keys are present in env
+const available = filterByApiKeys(allSkills, process.env as Record<string, string>)
+
+// Build a context string to inject into Claude prompts
+const context = buildSkillContext(available.map(s => s.name))
+// → "Make sure to use the skills: 'seo-blog-post', 'social-media-week'"
+```
+
+Each `SkillManifest` includes: `id`, `name`, `description`, `license`, `triggers`, `author`, `dataSources`, `byokKeys`, `compatibility`, and `filePath`.
+
+### `@ecoclaw/litellm-config`
+
+Multi-model LiteLLM configuration generator with OpenRouter routing, model aliases, and production-grade retry logic.
+
+```bash
+npm install @ecoclaw/litellm-config
+```
+
+```typescript
+import { generateLiteLLMConfig } from '@ecoclaw/litellm-config'
+
+// Generate a full litellm_config.yaml
+const configYaml = generateLiteLLMConfig({
+  anthropicKey: process.env.ANTHROPIC_API_KEY,
+  openaiKey: process.env.OPENAI_API_KEY,
+  openrouterKey: process.env.OPENROUTER_API_KEY,
+  // Optionally restrict to a subset of models:
+  // models: ['claude-3-5-sonnet', 'gpt-4o']
+})
+
+// Write to disk
+fs.writeFileSync('litellm_config.yaml', configYaml)
+```
+
+Default models: `claude-3-5-sonnet`, `gpt-4o`, `gemini-2.5-pro`, `llama-3.3-70b`
+
+Model aliases: `smart` → Claude 3.5 Sonnet, `fast` → Claude 3.5 Haiku, `cheap` → Llama 3.3 70B, `balanced` → GPT-4o
+
+Routing logic: direct provider API keys take precedence; everything else routes through OpenRouter. Retry policy: 4 retries on rate limits, timeouts, and server errors; 0 retries on auth and content policy errors.
+
+### Using Both Packages Together
+
+```typescript
+import { discoverSkills, filterByApiKeys } from '@ecoclaw/skill-discovery'
+import { generateLiteLLMConfig } from '@ecoclaw/litellm-config'
+import * as fs from 'fs'
+
+const env = process.env as Record<string, string>
+
+// 1. Discover and filter skills based on available API keys
+const skills = filterByApiKeys(discoverSkills('./skills'), env)
+console.log(`${skills.length} skills available given current API keys`)
+
+// 2. Generate LiteLLM routing config from the same API keys
+const litellmConfig = generateLiteLLMConfig({
+  anthropicKey: env.ANTHROPIC_API_KEY,
+  openrouterKey: env.OPENROUTER_API_KEY,
+})
+fs.writeFileSync('litellm_config.yaml', litellmConfig)
+```
+
+### ecoclaw vs. K-Dense
+
+| Dimension | ecoclaw | K-Dense |
+|-----------|---------|---------|
+| Domain focus | Business & legal (environmental law, marketing, compliance) | Scientific & research |
+| Skill types | Marketing copy, legal documents, client communications | Literature review, data analysis, lab workflows |
+| Primary users | Law firms, developers, municipalities, nonprofits | Researchers, academics, lab teams |
+| BYOK usage | Google Ads API, CRM integrations | PubMed, arXiv, data warehouse APIs |
+| Routing | OpenRouter multi-model with Claude preference | Provider-direct with cost optimization |
+
+---
+
 ## Brand & Compliance Notes
 
 - All content is drafted, not published — a human reviews before posting

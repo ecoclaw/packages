@@ -1,7 +1,13 @@
 ---
 name: referral-letter
 description: Write a dental specialist referral letter with clinical summary, reason for referral, and pertinent history
+license: MIT
 triggers: ["referral letter", "dental referral", "specialist referral", "endodontic referral", "oral surgery referral", "perio referral"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Referral Letter
