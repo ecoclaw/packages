@@ -1,6 +1,6 @@
 {
   "name": "@gonzih/litellm-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "LiteLLM configuration generator with BYOK multi-model routing for ecoclaw",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,7 +12,12 @@
   "bin": {
     "litellm-config": "bin/litellm-config.js"
   },
-  "keywords": ["ecoclaw", "litellm", "byok", "llm-routing"],
+  "keywords": [
+    "ecoclaw",
+    "litellm",
+    "byok",
+    "llm-routing"
+  ],
   "author": "ecoclaw",
   "license": "MIT",
   "devDependencies": {
@@ -26,10 +31,15 @@
   "dependencies": {
     "js-yaml": "^4.1.0"
   },
-  "files": ["dist", "bin"],
+  "files": [
+    "dist",
+    "bin"
+  ],
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node",
-    "testMatch": ["**/*.test.ts"]
+    "testMatch": [
+      "**/*.test.ts"
+    ]
   }
 }

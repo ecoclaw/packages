@@ -1,6 +1,6 @@
 {
   "name": "@gonzih/skill-discovery",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Runtime skill manifest discovery, API key filtering, and context building for ecoclaw skill bundles",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,7 +12,12 @@
   "bin": {
     "skill-discovery": "bin/skill-discovery.js"
   },
-  "keywords": ["ecoclaw", "skills", "byok", "skill-discovery"],
+  "keywords": [
+    "ecoclaw",
+    "skills",
+    "byok",
+    "skill-discovery"
+  ],
   "author": "ecoclaw",
   "license": "MIT",
   "devDependencies": {
@@ -26,10 +31,15 @@
   "dependencies": {
     "js-yaml": "^4.1.0"
   },
-  "files": ["dist", "bin"],
+  "files": [
+    "dist",
+    "bin"
+  ],
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node",
-    "testMatch": ["**/*.test.ts"]
+    "testMatch": [
+      "**/*.test.ts"
+    ]
   }
 }
