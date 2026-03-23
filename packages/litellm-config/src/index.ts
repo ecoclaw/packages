@@ -1,4 +1,5 @@
 import * as yaml from 'js-yaml'
+import { execSync } from 'child_process'
 
 export interface LiteLLMConfigOptions {
   openrouterKey?: string
@@ -43,7 +44,7 @@ interface LiteLLMConfig {
   }
 }
 
-const DEFAULT_MODELS = [
+export const DEFAULT_MODELS = [
   'claude-3-5-sonnet',
   'gpt-4o',
   'gemini-2.5-pro',
@@ -155,4 +156,113 @@ export function generateLiteLLMConfig(options: LiteLLMConfigOptions = {}): strin
   }
 
   return yaml.dump(config, { lineWidth: 120, quotingType: '"', noRefs: true })
+}
+
+// ── Ollama detection ────────────────────────────────────────────────────────
+
+export function parseOllamaList(output: string): string[] {
+  const lines = output.trim().split('\n')
+  // Skip the header line (NAME  ID  SIZE  MODIFIED)
+  return lines
+    .slice(1)
+    .map(line => line.split(/\s+/)[0])
+    .filter(name => name && name.length > 0)
+    .map(name => `ollama/${name}`)
+}
+
+export function detectOllamaModels(): string[] {
+  try {
+    const output = execSync('ollama list', { timeout: 5000, stdio: ['pipe', 'pipe', 'pipe'] }).toString()
+    return parseOllamaList(output)
+  } catch {
+    return []
+  }
+}
+
+// ── Env-based config ────────────────────────────────────────────────────────
+
+export interface EnvConfig {
+  anthropicKey?: string
+  openaiKey?: string
+  openrouterKey?: string
+  openaiApiBase?: string
+  extraModels?: string[]
+}
+
+export function readEnvConfig(
+  env: Record<string, string | undefined> = process.env as Record<string, string | undefined>
+): EnvConfig {
+  return {
+    anthropicKey: env['ANTHROPIC_API_KEY'],
+    openaiKey: env['OPENAI_API_KEY'],
+    openrouterKey: env['OPENROUTER_API_KEY'],
+    openaiApiBase: env['OPENAI_API_BASE'],
+    extraModels: env['LITELLM_EXTRA_MODELS']
+      ?.split(',')
+      .map(m => m.trim())
+      .filter(Boolean),
+  }
+}
+
+export function generateFromEnv(
+  env?: Record<string, string | undefined>,
+  ollamaModels?: string[]
+): string {
+  const config = readEnvConfig(env)
+  const detected = ollamaModels ?? detectOllamaModels()
+  const extra = config.extraModels ?? []
+
+  const models =
+    detected.length > 0 || extra.length > 0
+      ? [...DEFAULT_MODELS, ...extra, ...detected]
+      : undefined
+
+  return generateLiteLLMConfig({
+    anthropicKey: config.anthropicKey,
+    openaiKey: config.openaiKey,
+    openrouterKey: config.openrouterKey,
+    models,
+  })
+}
+
+// ── Config validation ───────────────────────────────────────────────────────
+
+export interface ValidationResult {
+  model: string
+  status: 'ok' | 'missing_key' | 'invalid'
+  message?: string
+}
+
+export function validateConfig(yamlStr: string): ValidationResult[] {
+  let config: Record<string, unknown>
+  try {
+    config = yaml.load(yamlStr) as Record<string, unknown>
+  } catch (e: unknown) {
+    const msg = e instanceof Error ? e.message : String(e)
+    return [{ model: 'config', status: 'invalid', message: `Invalid YAML: ${msg}` }]
+  }
+
+  if (!config?.model_list || !Array.isArray(config.model_list)) {
+    return [{ model: 'config', status: 'invalid', message: 'Missing model_list' }]
+  }
+
+  return (config.model_list as Array<Record<string, unknown>>).map(m => {
+    const params = (m.litellm_params ?? {}) as Record<string, unknown>
+    if (!params.model) {
+      return { model: String(m.model_name ?? ''), status: 'invalid' as const, message: 'Missing litellm_params.model' }
+    }
+    const modelStr = String(params.model)
+    const needsKey =
+      modelStr.includes('anthropic/') ||
+      modelStr.includes('openai/') ||
+      modelStr.includes('openrouter/')
+    if (needsKey && !params.api_key) {
+      return {
+        model: String(m.model_name ?? ''),
+        status: 'missing_key' as const,
+        message: `No api_key for ${modelStr}`,
+      }
+    }
+    return { model: String(m.model_name ?? ''), status: 'ok' as const }
+  })
 }

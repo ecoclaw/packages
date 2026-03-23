@@ -2,6 +2,9 @@ import * as fs from 'fs'
 import * as path from 'path'
 import * as yaml from 'js-yaml'
 
+export { REGISTRY, searchRegistry, resolvePackageName, writeManifest, readManifest } from './registry'
+export type { SkillPackageInfo, ManifestEntry, SkillsManifest } from './registry'
+
 export interface SkillManifest {
   id: string
   name: string
