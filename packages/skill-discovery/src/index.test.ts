@@ -1,7 +1,7 @@
 import * as path from 'path'
 import * as fs from 'fs'
 import * as os from 'os'
-import { discoverSkills, buildSkillContext, filterByApiKeys, SkillManifest } from './index'
+import { discoverSkills, buildSkillContext, filterByApiKeys, SkillManifest, REGISTRY, searchRegistry, resolvePackageName, writeManifest, readManifest } from './index'
 
 function createTmpSkillDir(skills: Array<{ id: string; content: string }>): string {
   const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'skill-discovery-test-'))
@@ -150,5 +150,107 @@ describe('filterByApiKeys', () => {
     ]
     const result = filterByApiKeys(skills, {})
     expect(result.map(s => s.id)).toEqual(['a', 'c'])
+  })
+})
+
+describe('REGISTRY', () => {
+  it('contains 32 or more packages', () => {
+    expect(Object.keys(REGISTRY).length).toBeGreaterThanOrEqual(32)
+  })
+
+  it('all packages are scoped under @gonzih/skills-', () => {
+    for (const pkg of Object.keys(REGISTRY)) {
+      expect(pkg.startsWith('@gonzih/skills-')).toBe(true)
+    }
+  })
+
+  it('all entries have triggers array and description', () => {
+    for (const [pkg, info] of Object.entries(REGISTRY)) {
+      expect(Array.isArray(info.triggers)).toBe(true)
+      expect(info.triggers.length).toBeGreaterThan(0)
+      expect(typeof info.description).toBe('string')
+      expect(info.description.length).toBeGreaterThan(0)
+    }
+  })
+})
+
+describe('searchRegistry', () => {
+  it('returns empty array for empty query', () => {
+    expect(searchRegistry('')).toEqual([])
+  })
+
+  it('finds marketing package by trigger keyword', () => {
+    const results = searchRegistry('campaign')
+    const pkgs = results.map(r => r.pkg)
+    expect(pkgs).toContain('@gonzih/skills-marketing')
+  })
+
+  it('finds competitor analysis package by multi-word query', () => {
+    const results = searchRegistry('competitor analysis')
+    expect(results.length).toBeGreaterThan(0)
+    expect(results[0].pkg).toBe('@gonzih/skills-competitor-analysis')
+  })
+
+  it('returns results sorted by score descending', () => {
+    const results = searchRegistry('seo keyword')
+    for (let i = 1; i < results.length; i++) {
+      expect(results[i - 1].score).toBeGreaterThanOrEqual(results[i].score)
+    }
+  })
+
+  it('returns empty for unrelated query', () => {
+    const results = searchRegistry('xyzzy-nonexistent-term-1234')
+    expect(results).toEqual([])
+  })
+})
+
+describe('resolvePackageName', () => {
+  it('resolves exact package name', () => {
+    expect(resolvePackageName('@gonzih/skills-marketing')).toBe('@gonzih/skills-marketing')
+  })
+
+  it('resolves domain name to full package', () => {
+    expect(resolvePackageName('marketing')).toBe('@gonzih/skills-marketing')
+  })
+
+  it('returns null for unknown domain', () => {
+    expect(resolvePackageName('nonexistent-xyz')).toBeNull()
+  })
+})
+
+describe('writeManifest / readManifest', () => {
+  let tmpDir: string
+
+  beforeEach(() => {
+    tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'manifest-test-'))
+  })
+
+  afterEach(() => {
+    fs.rmSync(tmpDir, { recursive: true, force: true })
+  })
+
+  it('writes and reads back installed packages', () => {
+    writeManifest(tmpDir, ['@gonzih/skills-marketing', '@gonzih/skills-seo'])
+    const entries = readManifest(tmpDir)
+    expect(entries).toHaveLength(2)
+    expect(entries[0].package).toBe('@gonzih/skills-marketing')
+    expect(entries[0].triggers.length).toBeGreaterThan(0)
+  })
+
+  it('creates .claude directory if missing', () => {
+    writeManifest(tmpDir, ['@gonzih/skills-sales'])
+    const manifestPath = path.join(tmpDir, '.claude', 'skills-manifest.json')
+    expect(fs.existsSync(manifestPath)).toBe(true)
+  })
+
+  it('returns empty array when no manifest exists', () => {
+    expect(readManifest(tmpDir)).toEqual([])
+  })
+
+  it('ignores unknown packages when writing', () => {
+    writeManifest(tmpDir, ['@gonzih/skills-marketing', '@unknown/package'])
+    const entries = readManifest(tmpDir)
+    expect(entries).toHaveLength(1)
+    expect(entries[0].package).toBe('@gonzih/skills-marketing')
   })
 })

@@ -9,6 +9,9 @@
     "test": "node --experimental-vm-modules node_modules/.bin/jest",
     "prepublishOnly": "npm run build && npm test"
   },
+  "bin": {
+    "litellm-config": "bin/litellm-config.js"
+  },
   "keywords": ["ecoclaw", "litellm", "byok", "llm-routing"],
   "author": "ecoclaw",
   "license": "MIT",
@@ -23,7 +26,7 @@
   "dependencies": {
     "js-yaml": "^4.1.0"
   },
-  "files": ["dist"],
+  "files": ["dist", "bin"],
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node",
