@@ -1,7 +1,13 @@
 ---
 name: performance-review-helper
 description: Structure performance review narratives with goal assessment, STAR-format behavior examples, ratings rationale, and 90-day development plans.
+license: MIT
 triggers: ["performance review", "perf review", "review writing", "employee review", "annual review", "review helper"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Performance Review Helper

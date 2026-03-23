@@ -1,7 +1,13 @@
 ---
 name: offer-analyzer
 description: Summarize and compare real estate offers side-by-side with net proceeds calculations, contingency flags, and recommended response.
+license: MIT
 triggers: ["offer analyzer", "analyze offer", "compare offers", "offer review", "multiple offers", "net proceeds"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Offer Analyzer

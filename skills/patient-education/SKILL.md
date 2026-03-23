@@ -1,7 +1,13 @@
 ---
 name: patient-education
 description: Produce plain-language patient education handouts tailored to diagnosis, reading level, and language preference.
+license: MIT
 triggers: ["patient education", "patient handout", "patient instructions", "discharge instructions", "health education"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Patient Education

@@ -1,7 +1,14 @@
 ---
 name: google-ads-campaign
 description: Write a complete Google Ads search campaign for an environmental law firm, including responsive search ad copy, extensions, and negative keyword list.
+license: MIT
 triggers: ["google ads", "ppc", "paid ads", "ad campaign", "search ads", "adwords"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok:
+    - "OPENAI_API_KEY (optional, for GPT-4 headline generation)"
 ---
 
 # Google Ads Campaign

@@ -1,7 +1,13 @@
 ---
 name: claim-summary
 description: Write a claim summary memo with loss description, coverage analysis, exposure estimate, and reserve recommendation
+license: MIT
 triggers: ["claim summary", "claims memo", "loss summary", "coverage analysis", "claims report", "reserve recommendation"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Claim Summary

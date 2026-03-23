@@ -1,7 +1,13 @@
 ---
 name: grant-proposal
 description: Write grant proposal sections — needs statement, program objectives, evaluation plan, and budget narrative
+license: MIT
 triggers: ["grant proposal", "grant writing", "grant application", "nonprofit grant", "funding proposal", "grant narrative"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Grant Proposal

@@ -1,7 +1,13 @@
 ---
 name: coverage-explainer
 description: Write a plain-language explanation of insurance coverage terms, limits, exclusions, and what's actually covered
+license: MIT
 triggers: ["coverage explainer", "insurance coverage", "policy explanation", "what does it cover", "coverage summary", "insurance terms"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Coverage Explainer

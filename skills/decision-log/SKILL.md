@@ -1,7 +1,13 @@
 ---
 name: decision-log
 description: Document decisions with context, alternatives considered, rationale, DACI ownership, and follow-up actions for organizational memory.
+license: MIT
 triggers: ["decision log", "log decision", "decision record", "document decision", "adr", "decision doc"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Decision Log

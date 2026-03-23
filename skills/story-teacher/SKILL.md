@@ -1,7 +1,13 @@
 ---
 name: story-teacher
 description: Interactive educational storytelling for kids 5-12. Math, science, history, vocabulary, coding, and ecology hidden inside choose-your-own-adventure stories.
+license: MIT
 triggers: ["story teacher", "educational story", "learn through stories", "kids learning", "story learning", "adventure learning"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Story Teacher

@@ -1,7 +1,13 @@
 ---
 name: board-memo
 description: Draft board-ready memos and briefing documents with executive summary, context, recommendation, and risk sections.
+license: MIT
 triggers: ["board memo", "board brief", "board update", "board presentation", "briefing document", "executive memo"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Board Memo

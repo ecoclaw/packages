@@ -1,7 +1,13 @@
 ---
 name: insurance-narrative
 description: Write a predetermination or prior authorization narrative for dental procedures
+license: MIT
 triggers: ["insurance narrative", "predetermination", "prior auth", "dental authorization", "insurance justification", "procedure narrative"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Insurance Narrative

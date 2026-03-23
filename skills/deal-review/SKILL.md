@@ -1,7 +1,13 @@
 ---
 name: deal-review
 description: MEDDIC-style deal review memo — metrics, economic buyer, decision criteria, process, identify pain, champion
+license: MIT
 triggers: ["deal review", "MEDDIC", "deal analysis", "pipeline review", "opportunity review", "sales review"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Deal Review

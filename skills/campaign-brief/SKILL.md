@@ -1,7 +1,13 @@
 ---
 name: campaign-brief
 description: Write a full marketing campaign brief — objectives, audience, messaging, channels, KPIs, and timeline
+license: MIT
 triggers: ["campaign brief", "marketing brief", "campaign plan", "marketing campaign", "campaign strategy"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Campaign Brief

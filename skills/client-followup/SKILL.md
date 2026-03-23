@@ -1,7 +1,13 @@
 ---
 name: client-followup
 description: Draft personalized follow-up messages for buyers and sellers at every touchpoint — post-showing, post-offer, under contract, and closing.
+license: MIT
 triggers: ["client followup", "follow up", "follow-up email", "client message", "post showing", "thank you email"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Client Followup

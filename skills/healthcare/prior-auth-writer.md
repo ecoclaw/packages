@@ -1,3 +1,16 @@
+---
+name: prior-auth-writer
+description: "Drafts prior authorization request letters and peer-to-peer talking points for medications, procedures, or specialist referrals"
+license: MIT
+triggers:
+  - prior-auth-writer
+  - prior auth writer
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
+---
 # Prior Auth Writer
 **Package:** @gonzih/skills-healthcare
 **Command:** /prior-auth-writer

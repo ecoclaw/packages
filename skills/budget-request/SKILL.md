@@ -1,7 +1,13 @@
 ---
 name: budget-request
 description: Write a budget request memo with business case, cost breakdown, ROI framing, and approval ask
+license: MIT
 triggers: ["budget request", "budget memo", "capital request", "spending request", "budget justification", "business case"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Budget Request

@@ -1,7 +1,13 @@
 ---
 name: engagement-letter
 description: Draft a client engagement letter with scope of services, fees, responsibilities, and terms
+license: MIT
 triggers: ["engagement letter", "client engagement", "scope of services", "CPA engagement", "accounting agreement", "service agreement"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Engagement Letter

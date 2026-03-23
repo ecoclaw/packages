@@ -1,7 +1,13 @@
 ---
 name: seo-blog-post
 description: Generate a full SEO-optimized blog post for an environmental law firm, including keyword research guidance, outline, full draft, and meta tags.
+license: MIT
 triggers: ["seo blog post", "write blog post", "blog post", "write article", "content marketing"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # SEO Blog Post

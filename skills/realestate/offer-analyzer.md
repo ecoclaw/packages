@@ -1,3 +1,16 @@
+---
+name: offer-analyzer
+description: "Takes multiple offer terms as inputs — price, down payment, financing type, contingencies, close date, escalation clauses — and produces a side-by-..."
+license: MIT
+triggers:
+  - offer-analyzer
+  - offer analyzer
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
+---
 # Offer Analyzer
 **Package:** @gonzih/skills-realestate
 **Command:** /offer-analyzer

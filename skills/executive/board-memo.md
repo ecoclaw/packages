@@ -1,3 +1,16 @@
+---
+name: board-memo
+description: "Drafts executive-quality board memos and pre-read documents from a set of inputs: topic, key data points, decision needed (if any), context, and risks"
+license: MIT
+triggers:
+  - board-memo
+  - board memo
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
+---
 # Board Memo
 **Package:** @gonzih/skills-executive
 **Command:** /board-memo

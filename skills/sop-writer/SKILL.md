@@ -1,7 +1,13 @@
 ---
 name: sop-writer
 description: Write a Standard Operating Procedure document with steps, roles, triggers, and quality checkpoints
+license: MIT
 triggers: ["SOP", "standard operating procedure", "process document", "operations manual", "procedure guide", "process doc"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # SOP Writer

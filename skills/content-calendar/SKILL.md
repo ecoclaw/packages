@@ -1,7 +1,13 @@
 ---
 name: content-calendar
 description: Generate a 4-week social + blog content calendar from a campaign brief
+license: MIT
 triggers: ["content calendar", "social calendar", "editorial calendar", "monthly calendar", "content plan", "blog schedule"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Content Calendar

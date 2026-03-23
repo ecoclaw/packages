@@ -1,7 +1,13 @@
 ---
 name: renewal-letter
 description: Write a policy renewal letter that highlights coverage changes, premium adjustments, and renewal recommendations
+license: MIT
 triggers: ["renewal letter", "policy renewal", "renewal notice", "insurance renewal", "coverage renewal", "renewal communication"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Renewal Letter

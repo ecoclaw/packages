@@ -1,3 +1,16 @@
+---
+name: market-report
+description: "Transforms raw MLS data — median prices, days on market, inventory levels, list-to-sale ratios — into a polished, client-ready market narrative"
+license: MIT
+triggers:
+  - market-report
+  - market report
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
+---
 # Market Report
 **Package:** @gonzih/skills-realestate
 **Command:** /market-report

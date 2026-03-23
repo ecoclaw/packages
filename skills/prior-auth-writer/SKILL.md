@@ -1,7 +1,13 @@
 ---
 name: prior-auth-writer
 description: Draft prior authorization letters with clinical necessity justification, supporting criteria, and appeal-ready language.
+license: MIT
 triggers: ["prior auth", "prior authorization", "insurance authorization", "auth letter", "peer to peer", "appeal letter"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Prior Auth Writer

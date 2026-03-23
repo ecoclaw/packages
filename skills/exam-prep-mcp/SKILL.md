@@ -1,7 +1,13 @@
 ---
 name: exam-prep-mcp
 description: AI exam preparation for high school and college students. FSRS spaced repetition, AP/SAT/college question generation, readiness scoring, mock exam simulation.
+license: MIT
 triggers: ["exam prep", "study for exam", "test prep", "ap exam", "sat prep", "college exam", "practice test"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Exam Prep MCP

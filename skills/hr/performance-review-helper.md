@@ -1,3 +1,16 @@
+---
+name: performance-review-helper
+description: "Helps managers write clear, fair, and actionable performance reviews"
+license: MIT
+triggers:
+  - performance-review-helper
+  - performance review helper
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
+---
 # Performance Review Helper
 **Package:** @gonzih/skills-hr
 **Command:** /performance-review-helper

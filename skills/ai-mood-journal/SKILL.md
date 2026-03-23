@@ -1,7 +1,13 @@
 ---
 name: ai-mood-journal
 description: Daily AI mood check-ins for children, longitudinal emotional pattern tracking, spiral detection, and weekly parent digest via Telegram or email.
+license: MIT
 triggers: ["mood journal", "emotional check in", "child mental health", "mood tracking", "weekly digest", "emotional patterns"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # AI Mood Journal

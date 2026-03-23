@@ -1,7 +1,13 @@
 ---
 name: catering-proposal
 description: Write a 3-tier catering proposal with menu options, pricing, staffing, and terms
+license: MIT
 triggers: ["catering proposal", "catering quote", "event catering", "catering menu", "catering bid", "catering package"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Catering Proposal

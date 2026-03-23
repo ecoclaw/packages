@@ -1,3 +1,16 @@
+---
+name: decision-log
+description: "Structures a decision record for significant organizational choices — capturing the context, options considered, rationale, decision, owner, and re..."
+license: MIT
+triggers:
+  - decision-log
+  - decision log
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
+---
 # Decision Log
 **Package:** @gonzih/skills-executive
 **Command:** /decision-log

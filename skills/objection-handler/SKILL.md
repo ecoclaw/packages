@@ -1,7 +1,13 @@
 ---
 name: objection-handler
 description: For each sales objection: reframe, provide evidence, and guide to close
+license: MIT
 triggers: ["objection handler", "sales objections", "handle objections", "overcome objections", "objection response"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Objection Handler

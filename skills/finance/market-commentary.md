@@ -1,3 +1,16 @@
+---
+name: market-commentary
+description: "Generates timely, advisor-branded market commentary for client emails, newsletters, and social media"
+license: MIT
+triggers:
+  - market-commentary
+  - market commentary
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
+---
 # Market Commentary
 **Package:** @gonzih/skills-finance
 **Command:** /market-commentary

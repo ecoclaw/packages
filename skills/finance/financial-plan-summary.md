@@ -1,3 +1,16 @@
+---
+name: financial-plan-summary
+description: "Converts detailed financial plan inputs — goals, timelines, current assets, income, savings rate, projected expenses — into a clear client-facing e..."
+license: MIT
+triggers:
+  - financial-plan-summary
+  - financial plan summary
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
+---
 # Financial Plan Summary
 **Package:** @gonzih/skills-finance
 **Command:** /financial-plan-summary

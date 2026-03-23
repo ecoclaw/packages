@@ -1,7 +1,13 @@
 ---
 name: discovery-call-prep
 description: Generate a prospect discovery call prep sheet — company research, pain hypothesis, open questions, and call flow
+license: MIT
 triggers: ["discovery call", "call prep", "sales call", "discovery prep", "prospect research", "call planning"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Discovery Call Prep

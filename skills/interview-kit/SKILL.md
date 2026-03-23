@@ -1,7 +1,13 @@
 ---
 name: interview-kit
 description: Build role-specific interview guides with behavioral, situational, and technical questions mapped to competencies and a scoring rubric.
+license: MIT
 triggers: ["interview kit", "interview guide", "interview questions", "interview scorecard", "hiring kit"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Interview Kit

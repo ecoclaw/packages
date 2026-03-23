@@ -1,7 +1,13 @@
 ---
 name: patient-recall-letter
 description: Write a dental recall or reactivation letter to bring lapsed patients back in for hygiene visits
+license: MIT
 triggers: ["recall letter", "patient recall", "reactivation letter", "hygiene recall", "patient outreach", "lapsed patient"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Patient Recall Letter

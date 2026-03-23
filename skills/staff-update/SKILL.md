@@ -1,7 +1,13 @@
 ---
 name: staff-update
 description: Write a staff memo or pre-shift brief — specials, 86'd items, service focus, and event notes
+license: MIT
 triggers: ["staff update", "pre-shift brief", "staff memo", "shift notes", "team update", "pre-shift meeting"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Staff Update

@@ -1,7 +1,13 @@
 ---
 name: skill-radar
 description: Analyzes your role and current skills against 2026 market trends, identifies gaps, and builds a personalized 90-day learning plan with weekly actions and free resources.
+license: MIT
 triggers: ["skill radar", "skill gap", "career growth", "90 day plan", "skills analysis", "upskill", "career development", "learning plan"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Skill Radar

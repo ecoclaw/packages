@@ -1,7 +1,13 @@
 ---
 name: underwriting-notes
 description: Write underwriting notes with risk profile summary, appetite assessment, and recommended terms or declination
+license: MIT
 triggers: ["underwriting notes", "risk assessment", "underwriting memo", "risk profile", "underwriting analysis", "appetite assessment"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Underwriting Notes

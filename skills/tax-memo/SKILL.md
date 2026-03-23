@@ -1,7 +1,13 @@
 ---
 name: tax-memo
 description: Write a tax research memo with relevant IRC code sections, analysis, conclusion, and recommendations
+license: MIT
 triggers: ["tax memo", "tax research", "tax analysis", "IRC research", "tax opinion", "tax position"]
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
 ---
 
 # Tax Memo

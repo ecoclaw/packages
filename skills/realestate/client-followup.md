@@ -1,3 +1,16 @@
+---
+name: client-followup
+description: "Drafts personalized follow-up emails and text messages for key touchpoints in the client journey: post-showing, post-offer, under-contract check-in..."
+license: MIT
+triggers:
+  - client-followup
+  - client followup
+metadata:
+  skill-author: ecoclaw
+  data-sources: []
+  compatibility: claude-code>=1.0
+  byok: []
+---
 # Client Follow-Up
 **Package:** @gonzih/skills-realestate
 **Command:** /client-followup
